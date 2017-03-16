@@ -1,13 +1,13 @@
 {
-  "name": "Essential React",
-  "description": "A minimal skeleton for building testable React apps using Babel",
+  "name": "Lando",
+  "description": "A Lando app",
   "keywords": [
     "react",
     "babel",
     "starter"
   ],
-  "repository": "https://github.com/pheuter/essential-react",
-  "logo": "https://dl.dropboxusercontent.com/u/1803181/essential-react-logo.png",
+  "repository": "",
+  "logo": "",
   "env": {
     "PRODUCTION": "true",
     "NPM_CONFIG_PRODUCTION": "false"
