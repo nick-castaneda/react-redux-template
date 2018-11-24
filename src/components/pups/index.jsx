@@ -1,12 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { bindActionCreators } from 'redux';
 import PropTypes from 'prop-types';
 
 import PupForm from './PupForm';
 import { updateBestPup } from '../../actions/pup';
 
-// import sty from './style.css';
+// import s from './style.css';
 
 function Pup(props) {
   const { bestPup } = props;
@@ -14,6 +15,7 @@ function Pup(props) {
     <div>
       <h1>{`I love my pup, ${bestPup}`}</h1>
       <PupForm bestPup={bestPup} updateBestPup={props.updateBestPup} />
+      <Link to="/">Home</Link>
     </div>
   );
 }

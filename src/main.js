@@ -13,7 +13,6 @@ import { Provider } from 'react-redux';
 // base.css holds general app styling
 import App from './components';
 import configureStore from './config/store';
-import './config/base.css';
 
 const store = configureStore();
 

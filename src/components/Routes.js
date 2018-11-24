@@ -1,5 +1,5 @@
 import React from 'react';
-import { Router, browserHistory, Route } from 'react-router';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 import HomeContainer from './home';
 import PupContainer from './pups';
@@ -9,9 +9,11 @@ import PupContainer from './pups';
 // can be found at their assigned paths
 export default function Routes() {
   return (
-    <Router history={browserHistory}>
-      <Route path="/" component={HomeContainer} />
-      <Route path="pups" component={PupContainer} />
-    </Router>
+    <BrowserRouter>
+      <div>
+        <Route exact path="/" component={HomeContainer} />
+        <Route path="/pups" component={PupContainer} />
+      </div>
+    </BrowserRouter>
   );
 }

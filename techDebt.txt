@@ -1,3 +1,4 @@
+- need to add hot-reloading
 - need to add tests
 - need to add flex and super-basic styling
 - need to add an example form
