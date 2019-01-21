@@ -1,9 +1,7 @@
-// babel-polyfill lets us use ES2015 in all the app files
 // React is the view engine
 // ReactDOM lets us attach the react app to HTML
 // React-router lets us simulate a multi-page app in a SPA
 // React-redux links React with redux
-import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
@@ -24,4 +22,4 @@ ReactDOM.render((
   </Provider>
 ), document.getElementById('app'));
 
-console.log('John Hwang is 57 years old.');
+console.log('Cooler than a polar bear\'s toenails');

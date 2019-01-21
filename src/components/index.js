@@ -8,6 +8,7 @@ import PropTypes from 'prop-types';
 // import all the components and actions this container will use.
 import Routes from './Routes';
 import { login } from '../actions/auth';
+import './style.css';
 
 class App extends React.Component {
   componentDidMount() {
@@ -17,10 +18,22 @@ class App extends React.Component {
   render() {
     const { username } = this.props;
     if (username) {
-      return <Routes />;
+      return (
+        <div className="container">
+          <Routes className="content" />
+        </div>
+      );
     }
 
-    return <p>You are logged out</p>;
+    return (
+      <div className="container">
+        <div className="side" />
+        <div className="content">
+          <p className="blue">You are logged out</p>
+        </div>
+        <div className="side" />
+      </div>
+    );
   }
 }
 

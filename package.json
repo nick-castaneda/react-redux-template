@@ -2,13 +2,7 @@
   "name": "dopeApp",
   "version": "0.1.0",
   "description": "Dope app",
-  "main": "src/main.js",
-  "scripts": {
-    "server": "node start.js",
-    "build": "webpack -p --progress --config webpack.production.config.js",
-    "test": "",
-    "clean": "rm build/app.js"
-  },
+  "main": "src/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/pheuter/essential-react.git"
@@ -19,37 +13,28 @@
     "react",
     "quickstart"
   ],
-  "author": "Nick Castañeda (inspired by Mark Fayngersh)",
+  "author": "Nick Castañeda (inspired by Mark Fayngersh and Devin Wells)",
   "license": "MIT",
   "homepage": "https://github.com/nick-castaneda/react-redux-template",
   "devDependencies": {
-    "@babel/core": "^7.1.6",
-    "@babel/plugin-transform-runtime": "^7.1.0",
-    "@babel/preset-env": "^7.1.6",
-    "@babel/preset-react": "^7.0.0",
-    "autoprefixer": "^9.3.1",
-    "babel-eslint": "^10.0.1",
-    "babel-loader": "^8.0.4",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-runtime": "^6.26.0",
-    "css-loader": "^1.0.1",
-    "eslint": "^5.9.0",
+    "autoprefixer": "^9.4.6",
+    "babel-loader": "^8.0.5",
+    "eslint": "^5.12.1",
     "eslint-config-airbnb": "^17.1.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jest": "^22.0.0",
-    "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-react": "^7.11.1",
-    "mini-css-extract-plugin": "^0.4.5",
-    "postcss-nested": "^4.1.0",
-    "react-hot-loader": "^4.3.12",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.26.0",
-    "webpack-dev-server": "^3.1.10"
+    "inquirer": "^6.2.1",
+    "json5": "^2.1.0",
+    "postcss": "^7.0.13",
+    "react-scripts": "^1.0.14",
+    "webpack": "^3.12.0",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   },
   "dependencies": {
-    "@babel/runtime": "^7.1.5",
-    "babel-polyfill": "^6.26.0",
-    "express": "^4.16.4",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
